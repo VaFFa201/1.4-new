@@ -15,62 +15,67 @@
 
 
 <body>
-    <aside class="burger">
-        <div class="burger__header">
-            <button class="burger__button button">
-                <img src="image/icons/Cross.svg" class="button__img">
-            </button>
+    <aside class="aside-menu">
+        <div class="aside-menu__container">
+            <div class="aside-menu__header">
+                <button class="burger__button button">
+                    <img src="image/icons/Cross.svg" class="button__img">
+                </button>
 
-            <img src="image/icons/Logo.svg" alt="CPS logo" class="header__logo">
+                <a href="#" class="aside-menu__logo-link">
+                    <img src="image/icons/Logo.svg" alt="CPS logo" class="header__logo">
+                </a>
 
-            <button class="burger__search button">
-                <img src="image/icons/Lens.svg" class="button__img">
-            </button>
+                <button class="aside-menu__search-btn button">
+                    <img src="image/icons/Lens.svg" class="button__img">
+                </button>
+            </div>
+
+            <nav class="aside-menu__nav">
+                <ul class="aside-menu__nav-links">
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Ремонт техники</a></li>
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Услуги и сервисы</a></li>
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Корпоративным клиентам</a>
+                    </li>
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Продавцам техники</a></li>
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Партнерам</a></li>
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Производителям</a></li>
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Наши сервисные центры</a>
+                    </li>
+                    <li class="aside-menu__nav-item"><a href="#" class="aside-menu__nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <footer class="aside-menu__footer">
+                <ul class="aside-menu__footer-btns">
+                    <li class="aside-menu__footer-btn">
+                        <button class="button">
+                            <img src="image/icons/Phone.svg" class="button__img">
+                        </button>
+                    </li>
+                    <li class="aside-menu__footer-btn">
+                        <button class="button">
+                            <img src="image/icons/Message.svg" class="button__img">
+                        </button>
+                    </li>
+                    <li class="aside-menu__footer-btn">
+                        <button class="button">
+                            <img src="image/icons/Person.svg" class="button__img">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="aside-menu__footer-contacts contacts">
+                    <a href="mailto: mail@cps.com" class="contacts__email">mail@cps.com</a>
+                    <a href="tel:88008908900" class="contacts__tel">8 800 890 8900</a>
+                </div>
+                <div class="aside-menu__footer-lang-switch lang-switch">
+                    <button class="lang-switch__btn lang-switch__btn--active">ru</button>
+                    <button class="lang-switch__btn">en</button>
+                    <button class="lang-switch__btn">ch</button>
+                </div>
+            </footer>
         </div>
-
-        <nav class="burger__nav">
-            <ul class="burger__links">
-                <li><a href="#" class="burger__link">Ремонт техники</a></li>
-                <li><a href="#" class="burger__link">Услуги и сервисы</a></li>
-                <li><a href="#" class="burger__link">Корпоративным клиентам</a></li>
-                <li><a href="#" class="burger__link">Продавцам техники</a></li>
-                <li><a href="#" class="burger__link">Партнерам</a></li>
-                <li><a href="#" class="burger__link">Производителям</a></li>
-                <li><a href="#" class="burger__link">Наши сервисные центры</a></li>
-                <li><a href="#" class="burger__link">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <footer class="burder-footer">
-            <ul class="burder-footer__btns">
-                <li class="burder-footer__btn">
-                    <button class="button">
-                        <img src="image/icons/Phone.svg" class="button__img">
-                    </button>
-                </li>
-                <li class="burder-footer__btn">
-                    <button class="button">
-                        <img src="image/icons/Message.svg" class="button__img">
-                    </button>
-                </li>
-                <li class="burder-footer__btn">
-                    <button class="button">
-                        <img src="image/icons/Person.svg" class="button__img">
-                    </button>
-                </li>
-            </ul>
-
-            <div class="burder-footer__contacts contacts">
-                <a href="mailto: mail@cps.com" class="contacts__email">mail@cps.com</a>
-                <a href="tel:88008908900" class="contacts__tel">8 800 890 8900</a>
-            </div>
-            <div class="burder-footer__lang-switch lang-switch">
-                <button class="lang-switch__btn lang-switch__btn--active">ru</button>
-                <button class="lang-switch__btn">en</button>
-                <button class="lang-switch__btn">ch</button>
-            </div>
-        </footer>
-
     </aside>
 </body>
 

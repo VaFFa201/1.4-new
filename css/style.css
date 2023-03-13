@@ -72,21 +72,26 @@ body {
     padding: 5px 0px 0px 0px;
 }
 
-.burger {
+.aside-menu {
     font-size: 16px;
     line-height: 24px;
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0 24px;
     width: 320px;
     height: 100vh;
     box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
 }
 
-.burger__header {
+.aside-menu__container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-menu__header {
     display: flex;
     align-items: center;
     min-height: 88px;
@@ -97,25 +102,28 @@ body {
     margin: 0px 16px 0px 0px;
 }
 
-.header__logo {
+.aside-menu__logo-link {
+    display: block;
     margin-right: auto;
 }
 
-.burger__search {}
+.header__logo {}
 
-.burger__nav {
+.aside-menu__search-btn {}
+
+.aside-menu__nav {
     flex: 1 1 auto;
 }
 
-.burger__links {
+.aside-menu__nav-links {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.burger__link {
+.aside-menu__nav-link {
     display: block;
     padding: 8px;
-    margin: 5px 0;
     padding-left: 0px;
     color: #1B1C21;
     opacity: 1;
@@ -125,11 +133,11 @@ body {
     transition: opacity 0.2s linear;
 }
 
-.burger__link:hover {
+.aside-menu__nav-link:hover {
     opacity: 0.6;
 }
 
-.burger__link:hover::before {
+.aside-menu__nav-link:hover::before {
     display: block;
     position: absolute;
     content: '';
@@ -140,25 +148,25 @@ body {
     background-color: #41F6D7;
 }
 
-.burder-footer {
+.aside-menu__footer {
     display: flex;
     flex-direction: column;
 }
 
-.burder-footer__btns {
+.aside-menu__footer-btns {
     display: flex;
     margin: 0px 0px 16px 0px;
 }
 
-.burder-footer__btn {
+.aside-menu__footer-btn {
     margin: 0px 16px 0px 0px;
 }
 
-.burder-footer__btn:last-child {
+.aside-menu__footer-btn:last-child {
     margin-right: 0px;
 }
 
-.burder-footer__contacts {
+.aside-menu__footer-contacts {
     margin-bottom: 40px;
 }
 
@@ -184,7 +192,7 @@ body {
     letter-spacing: -0.6px;
 }
 
-.burder-footer__lang-switch {
+.aside-menu__footer-lang-switch {
     margin: 0px 0px 32px 0px;
 }
 
@@ -200,13 +208,13 @@ body {
 }
 
 @media (max-height: 740px) {
-    .burder-footer__contacts {
+    .aside-menu__footer-contacts {
         margin-bottom: 8px;
     }
 }
 
 @media (max-height: 690px) {
-    .burger__link {
+    .aside-menu__nav-link {
         margin: 2px 0;
     }
 }
